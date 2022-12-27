@@ -42,7 +42,7 @@ body {
 
 .sidebar img {
   width: 20px;
-  height: 20px;
+  /* height: 20px; */
 }
 
 .links {
@@ -115,11 +115,26 @@ body {
 }
 
 .mf {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 6vw;
+  padding-right: 6vw;
   padding-top: 40px;
-  width: 60vw;
+  width: 56vw;
   border-right: var(--theme-border);
+}
+
+.sf-superframe {
+  flex: 1;
+  height: 100%;
+}
+
+@media (max-width: 1155px) {
+  .mf {
+    width: calc(100% - 12vw);
+  }
+
+  .sf-superframe {
+    display: none;
+  }
 }
 
 .mf ion-icon {
@@ -131,6 +146,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .mf-header h3 {
@@ -193,4 +209,84 @@ body {
   border: none;
   height: 1px;
   background-color: #2F2F2F;
+}
+
+@media (max-width: 640px) {
+  .mf {
+    padding-left: 6vw !important;
+    padding-right: 6vw !important;
+    height: 100vh;
+    border-right: none;
+    /* width: calc(100% - 8vw); */
+  }
+
+  .App {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    width: calc(100vw - 50px);
+    height: 80px;
+    border-right: none;
+    border-top: var(--theme-border);
+    position: fixed;
+    bottom: 0px;
+    padding: 0px 25px 0px 25px;
+    background-color: #12121269;
+    backdrop-filter: blur(30px);
+  }
+
+  .links {
+    column-gap: 30px;
+    flex-direction: row;
+  }
+
+  .tabs {
+    /* display: none; */
+  }
+
+  .tab {
+    font-size: 12px;
+  }
+
+  .tooltip {
+    display: none !important;
+  }
+}
+
+.sf {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.sf-search {
+  background: #1C1C1C;
+  border: 1px solid #2F2F2F;
+  border-radius: 14px;
+  height: 40px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  padding-left: 14px;
+  margin-top: 24px;
+}
+
+.sf-search ion-icon {
+  color: var(--icon-color);
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.sf-search input {
+  background-color: transparent;
+  border: none;
+  font-family: var(--mont-pro);
+  font-weight: 500;
+  outline: none;
+  color: var(--icon-color);
+  width: 100%;
 }

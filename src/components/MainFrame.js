@@ -9,16 +9,16 @@ function MainFrame() {
         </div>
         <div className="tabs">
             <div className="tab highlighted">
-                <span>About Me</span>
+                <span>👋🏼 Hey There!</span>
             </div>
             <div className="tab">
-                <span>Projects</span>
+                <span>Working On</span>
             </div>
             <div className="tab">
                 <span>Tech</span>
             </div>
             <div className="tab">
-                <span>Other Hobbies</span>
+                <span>Hobbies</span>
             </div>
         </div>
 
