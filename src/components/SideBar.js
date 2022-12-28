@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import icon from "../assets/icon.png";
+import icon from "../assets/icon2.png";
 import me from "../assets/me.jpeg";
 
 function SideBar() {
