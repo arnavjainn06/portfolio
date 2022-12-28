@@ -10,6 +10,11 @@ function Timeline() {
                 👋🏼 Hey There! I am Arnav Jain, a Programmer based in Mumbai, India.
                 I specialise in creating React Apps for the web and Mobile Apps using Flutter.
             </p>
+            <div className="year-start">
+                <div className="circtop"></div>
+                <span>Start</span>
+            </div>
+            <div className="year special-year"></div>
             <div className="tl-tp">
                 <img src={robotics} />
                 <div className="tl-tp-content">
@@ -23,7 +28,10 @@ function Timeline() {
                     </p>
                 </div>
             </div>
-            <div className="year"></div>
+            <div className="year">
+                {/* <div className="circtop"></div>
+                <div className="circtop"></div> */}
+            </div>
             <div className="tl-tp">
                 <img src={html} />
                 <div className="tl-tp-content">

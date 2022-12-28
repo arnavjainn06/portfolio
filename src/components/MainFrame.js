@@ -6,13 +6,13 @@ import Hobbies from './Hobbies';
 
 function MainFrame() {
 
-    const [tab, setTab] = useState(2);
+    const [tab, setTab] = useState(0);
 
   return (
     <div className="mf">
         <div className="mf-header">
             <h3>Arnav Jain</h3>
-            <ion-icon name="ellipsis-horizontal-circle-outline"></ion-icon>
+            {/* <ion-icon name="ellipsis-horizontal-circle-outline"></ion-icon> */}
         </div>
         <div className="tabs">
             <div className={tab == 0 ? "tab highlighted" : "tab"} onClick={() => setTab(0)}>

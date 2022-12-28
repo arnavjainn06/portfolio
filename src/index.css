@@ -130,6 +130,7 @@ body {
   padding-top: 40px;
   width: 56vw;
   overflow-x: hidden;
+  padding-bottom: 100px;
 }
 
 .sf-superframe {
@@ -162,6 +163,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 30px;
 }
 
 .mf-header h3 {
@@ -264,6 +266,7 @@ body {
     justify-content: start;
     grid-template-columns: auto auto;
     row-gap: 10px;
+    display: none;
   }
 
   /* .tab {
@@ -450,15 +453,6 @@ body {
   overflow-y: scroll;
 }
 
-.year {
-  width: 2px;
-  height: 85px;
-  border-radius: 100px;
-  background-color: #555;
-  margin-left: 20px;
-  opacity: 0.2;
-}
-
 .tl p {
   font-family: var(--ex-pro);
   font-weight: lighter;
@@ -466,4 +460,61 @@ body {
   letter-spacing: normal;
   font-size: 16px;
   margin-bottom: 30px;
+}
+
+.year {
+  width: 2px;
+  height: 85px;
+  border-radius: 100px;
+  background-color: #333333;
+  margin-left: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.circtop {
+  background-color: #333333 !important;
+  width: 15px;
+  height: 15px;
+  border-radius: 100px;
+}
+
+.year-start {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.year-start span {
+  color: var(--icon-color);
+  margin-left: 10px;
+  font-family: var(--mont-pro);
+}
+
+.special-year {
+  margin-left: 6.5px;
+  margin-bottom: 4px;
+  height: 40px;
+}
+
+@media (max-width: 640px) {
+  .tl-tp {
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  .tl-tp img {
+    width: 100%;
+  }
+
+  .tl p {
+    margin-bottom: 0px;
+  }
+
+  .year-start {
+    margin-top: 20px;
+  }
 }
