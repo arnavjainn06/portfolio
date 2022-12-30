@@ -31,6 +31,10 @@
   flex-direction: row;
 }
 
+html {
+  overflow-y: hidden;
+}
+
 body {
   background-color: var(--bg) !important;
   /* overflow-x: hidden; */
