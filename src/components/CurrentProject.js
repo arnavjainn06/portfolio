@@ -1,7 +1,13 @@
 import React from "react";
 
 function CurrentProject() {
-    return <div>CurrentProject</div>;
+    return (
+        <div className="cp">
+            <p>
+                💻 Here's a quick idea of what I'm currently working on.
+            </p>
+        </div>
+    );
 }
 
 export default CurrentProject;

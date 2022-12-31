@@ -522,3 +522,18 @@ body {
     margin-top: 20px;
   }
 }
+
+.cp {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+.cp p {
+  font-family: var(--ex-pro);
+  font-weight: lighter;
+  color: white;
+  letter-spacing: normal;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
