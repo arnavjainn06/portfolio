@@ -523,17 +523,53 @@ body {
   }
 }
 
-.cp {
+.cp, .ts {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 50px;
 }
 
-.cp p {
+.cp p, .ts p {
   font-family: var(--ex-pro);
   font-weight: lighter;
   color: white;
   letter-spacing: normal;
   font-size: 16px;
   margin-bottom: 30px;
+}
+
+.ts-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: #1a1a1a;
+  padding: 15px;
+  border-radius: 10px;
+  font-family: var(--ex-pro);
+  margin-bottom: 20px;
+}
+
+.ts-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.ts-card-content h3 {
+  color: white;
+}
+
+.ts-card span {
+  color: grey;
+  font-family: var(--mont-pro) !important;
+}
+
+.ts-card a {
+  color: rgb(139, 139, 241);
+  text-decoration: none;
+  font-family: var(--mont-pro);
+  font-weight: 600;
+  letter-spacing: -1px;
 }
